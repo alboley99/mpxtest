@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface ViewController : UIViewController
+
+<UITableViewDataSource , UITableViewDelegate>
+
+{
+    
+    NSMutableArray *videos;
+}
+
+@property (weak, nonatomic) IBOutlet UITableView *videosTableView;
+
 
 @end
